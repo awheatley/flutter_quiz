@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz/answer_button.dart';
 import 'package:flutter_quiz/data/questions.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({super.key});
@@ -35,7 +36,11 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             Text(
               textAlign: TextAlign.center,
               currentQuestion.text,
-              style: const TextStyle(color: Colors.white),
+              style: GoogleFonts.inter(
+                color: const Color.fromARGB(255, 238, 210, 244),
+                fontSize: 24,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             const SizedBox(height: 30),
             ...currentQuestion.getShuffledAnswers().map((answer) {
