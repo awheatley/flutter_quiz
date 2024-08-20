@@ -39,18 +39,3 @@ class StartScreen extends StatelessWidget {
     );
   }
 }
-
-
-// Container(
-//           decoration: const BoxDecoration(
-//             color: Colors.purple,
-//           ),
-//           child: Center(
-//             child: Column(
-//               mainAxisAlignment: MainAxisAlignment.center,
-//               children: [
-//                 Image.asset('assets/images/quiz-logo.png'),
-//               ],
-//             ),
-//           ),
-//         ),
